@@ -9,7 +9,6 @@ BASE_URL = "http://127.0.0.1:6989"  # Replace with your actual API base URL
 def test_general_api():
     # List of test cases
     test_cases = [
-        # PASS
         ("stanley-cups.csv", "application/csv"),
         ("fake.doc", "application/msword"),
         ("fake.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
@@ -20,15 +19,13 @@ def test_general_api():
         ("fake-email-image-embedded.eml", "message/rfc822"),
         ("fake-email.eml", "message/rfc822"),
         ("winter-sports.epub", "application/epub"), # Fix tempfile issue
-        # PASS
         ("fake-html.html", "text/html"),
         ("layout-parser-paper-fast.jpg", "image/jpeg"), # Fix tempfile issue, install tesseract, poppler
-        # PASS
         ("spring-weather.html.json", "application/json"),
         ("README.md", "text/markdown"),
         ("fake-email.msg", "application/x-ole-storage"),
         ("fake.odt", "application/vnd.oasis.opendocument.text"), # install pandoc
-        # ("layout-parser-paper.pdf", "application/pdf"), # install tesseract and poppler
+        ("layout-parser-paper.pdf", "application/pdf"), # install tesseract and poppler
         ("fake-power-point.ppt", "application/vnd.ms-powerpoint"),
         ("fake-power-point.pptx", "application/vnd.openxmlformats-officedocument.presentationml.presentation"),
         ("README.rst", "text/x-rst"), # fix tempfile issue
